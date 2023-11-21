@@ -7,8 +7,8 @@
 // Scripts
 // 
 const counter = document.querySelector(".counter-number");
-async function  updateCounter() {
-    let response = await fetch("https://f7vbl2txjjpr42qyak3pfvb44q0wasmi.lambda-url.ap-south-1.on.aws/")
+async function updateCounter() {
+    let response = await fetch("https://f7vbl2txjjpr42qyak3pfvb44q0wasmi.lambda-url.ap-south-1.on.aws/");
     let data = await response.json();
     counter.innerHTML = `Views: ${data}`;
 }
